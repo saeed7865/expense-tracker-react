@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense tracker</title>
+  <script src="https://kit.fontawesome.com/affad7460b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Expense Tracker</h1>
+  </header>
+  <div class="add-expense-container">
+    <h3>Add new expense:</h3>
+    <form class="add-expense-input-container" id="expensesForm" onsubmit = "event.preventDefault()">
+      <div class="input-containers">
+        <div class="input-container-1">
+          <div class="label-input-type">
+            <label for="paymentType">Type:</label>
+                <select name="type" id="paymentType" required/>
+                  <option value="" disabled selected hidden>Choose payment type</option>
+                  <option>Card</option>
+                  <option>Cash</option>
+                  <option>Cryptocoin</option>
+                  <option>Other</option>
+                </select>
+          </div>
+          <div class="label-input-date">      
+            <label for="date">Date:</label>
+                <input type="date" name="date" id="expenseDate" required/>  
+          </div> 
+        </div>
+        <div class="input-container-2">
+          <div class="label-input-name">
+            <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="What did you spend on?" id="expenseName" required/>
+          </div>
+          <div class="label-input-amount">
+            <label for="amount">Amount:</label>
+                <input type="number" name="number" min="1" step=".01" placeholder="How much?" id="expenseAmount" class="expense-amount" required/>
+          </div>
+        </div>
+      </div>
+      <div class="expense-btn-container">
+        <button class="add-expense-btn" id="addExpenseBtn" type="submit">Add a new expense</button>
+      </div>
+    </form>
+      <table id="expensesTbl">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tblBody"></tbody>
+      </table>
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>
