@@ -6,7 +6,7 @@ An app to track your expenses written in HTML,CSS and Javascript
 
 <br>
 
-Visit website [here](https://saeed7865.github.io/Expense-tracker/)
+Visit website [here](https://saeed7865.github.io/expense-tracker-react/)
 
 <br>
 
