@@ -17,4 +17,4 @@ This project was an app build in HTML,CSS and JavaScript which i think i could p
 
 ## Author
 
--   **Osama Sandhu** - _Full-Stack Software Developer_ - [Website]| [LinkedIn]
+-   **Osama Sandhu** - _Full-Stack Software Developer_ - Linkedin [https://www.linkedin.com/in/osama-sandhu-4455571b5/]
